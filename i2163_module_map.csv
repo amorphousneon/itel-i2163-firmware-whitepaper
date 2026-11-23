@@ -1,0 +1,30 @@
+base,end,size,peripheral,confidence,evidence
+0x20000000,0x200000FF,0x100,SMC - PSRAM/SRAM memory controller,confirmed,"fpdoom init_sc6531e.h sc6531e_init_smc(): config regs 0x00-0xA0, PSRAM timing"
+0x20500000,0x205003FF,0x400,AHB CRG - AHB clock/power domain control,confirmed,"fpdoom: AHB_PWR_ON(0x20501080)/OFF(0x20502080), soft rst 0x20501040/0x20502040, MEM_REMAP 0x205000e0, SMC id 0x20500168"
+0x20800000,0x208000FF,0x100,LCM - MCU/DBI LCD interface controller,confirmed,"fpdoom: LCM_REG_BASE=0x20800000; status+0(bit1 busy), mode 0x10+cs*0x10, timing 0x14+cs*0x10"
+0x20D00000,0x20D001FF,0x200,LCDC - display controller,confirmed,"fpdoom syscode.h lcdc_base_t: ctrl 0x00, disp_size 0x04, img 0x20, ocd 0x50/0x80/0xb0, y2r 0x100, irq 0x110"
+0x60000000,0x60000000,0x1,LCM memory window (LCD command/data port),confirmed,fpdoom: lcd_setup.addr = cs<<26 | 0x60000000; data/cmd via bit17
+0x69000000,0x69000074,0x75,unknown module (0x74 bytes),low,firmware base table 0x5cd70
+0x80000000,0x80000FFF,0x1000,INTC0 - interrupt controller bank 0,high,IRQ enable set +0x08 (bit22=LCDC per fpdoom); raw status +0x04 (SC6530 USB bit25)
+0x80001000,0x80001FFF,0x1000,INTC1 - interrupt controller bank 1,confirmed,"fpdoom: raw status 0x80001004 bit5=USB, bit8=SDIO0; mask-clear writes 0xFFFFFFFF"
+0x81000000,0x810030FF,0x3100,AON timer/counter block (OS tick + RTC-like),high,"0x81000024: 23-bit free-running counter (wrap 0x7FFFFF, read-twice-stable); 0x81000040 LOAD / 0x81000048 VALUE / 0x8100004c CTRL timer; 0x8100300c second stable counter"
+0x82000000,0x8200001F,0x20,ADI - analog-digital interface controller,confirmed,"fpdoom: FIFO_STS 0x82000004 (bit22 full/bit21 empty), RD_CMD 0x82000008, RD_DATA 0x8200000C (bit31 busy)"
+0x82001000,0x82001FFF,0x1000,"ANA die register window (via ADI) - SC6530/DA base 0x82001000, SC6531E base 0x82001400",confirmed,fpdoom: ANA_CHIP_ID 0x82001000/4; ANA_WHTLED_CTRL 0x82001400+0x13c; LDO_SD 0x8200145c/0x82001460; ANA_LDO_SF_REG0 0x8200148c
+0x82002000,0x8200201F,0x20,EFUSE controller,confirmed,"fpdoom: data +0x00, row +0x08, cmd +0x0C, power +0x10, status +0x14 (bit1 busy); 16 rows on SC6531E"
+0x82003000,0x820031BF,0x1C0,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",medium,"firmware base table 0x5ccf8; bit9/bit10 enables at +0x48; config table writes +0x8C..+0xAC, +0x100.."
+0x83000000,0x8300002F,0x30,unknown module (0x30 bytes),low,firmware base table 0x5cd00
+0x84000000,0x8400002F,0x30,unknown module (0x30 bytes),low,firmware base table 0x5cd08
+0x86000000,0x86000FFF,0x1000,UART0,medium,base table: 0x86000000-0x86000014 pair with twin at 0x86001000; +0x00 THR / +0x14 LSR 8250-style polling
+0x86001000,0x86001FFF,0x1000,UART1,medium,"twin module of 0x86000000, base table 0x5cd20"
+0x87000000,0x8700003F,0x40,KPD - keypad controller,confirmed,fpdoom keypad_base_t: ctrl/int_en/int_raw/int_mask/int_clr/polarity 0x18/debounce 0x1c/long_key 0x20/sleep_cnt 0x24/clk_divide 0x28/key_status 0x2c/sleep_stat 0x30/dbg 0x34/0x38
+0x88000000,0x8800000F,0x10,"small module, watchdog candidate (LOAD/VALUE/CTRL/LOCK)",low,base table 0x88000000-0x88000010 (4 registers)
+0x8A000000,0x8A0003A7,0x3A8,"GPIO - 0x4C (76) pins, 0x80-byte stride per port",confirmed,"fpdoom: GPIO_DATA +0x00, GPIO_DMSK +0x04, GPIO_DIR +0x08, GPIO_IE +0x18; 76 GPIOs on SC6531E"
+0x8A001000,0x8A00105B,0x5C,GPIO auxiliary bank A (0x5C bytes),low,base table 0x5cd40
+0x8A002000,0x8A002027,0x28,GPIO auxiliary bank B (0x28 bytes),low,base table 0x5cd48
+0x8B000000,0x8B000387,0x388,"AON_APB GR - global registers: clocks, resets, chip id, PM",confirmed,"CPU freq 0x8b00004c (bits1:0 26/104/208MHz, bit2 AHB/2); chip id 0x8b00035c/60/64; APB pwr gate 0x8b0010a8/0x8b0020a8; soft rst 0x8b001068/0x8b002068; LCM reset 0x8b000224"
+0x8C000000,0x8C0002E3,0x2E4,PINCFG - pin configuration / function mux (one reg per pin),confirmed,fpdoom pin_init: pinmap writes 0x8c000000-0x8c0002e4; SDIO pins 0x9c-0xb0; LCD/SPI1 pins 0x138-0x148
+0x8D000000,0x8D0000FF,0x100,module written 0x41C1C0 at cold boot (watchdog/boot-flag candidate),low,reset stub: if [0x8b000364]==0 then [0x8d000000]=0x0041C1C0
+0x8D100000,0x8D101034,0x1035,SFC - SPI NOR flash controller,high,base table 0x8d101000-0x8d101034; fpdoom sfc.c channel structs (cmd[12]/type_info/status/soft_req/cmd_set)
+0x8D200000,0x8D2000FF,0x100,CGA - clock generator / divider module,confirmed,"fpdoom: CPU clock mux 0x8d20002c, 0x8d200030 bits9:8; SDIO clock select 0x8d200044"
+0x8F000000,0x8F00003B,0x3C,unknown module (0x3C bytes),low,base table 0x5cd78
+0x90000000,0x90000200,0x201,"USB device controller (DWC-like, 4 endpoints + FIFOs)",confirmed,fpdoom usbio.c: full endpoint map; INT_CLR writes 0x3fff; FIFO window +0x80000

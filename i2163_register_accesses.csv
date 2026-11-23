@@ -1,0 +1,279 @@
+address,peripheral,module_base,reg_offset,access,mode,code_pc,instruction,value_written,id_confidence
+0x82003048,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0x48,R,thumb,0x00036DB4,"ldr r0, [r1, #8]",,medium
+0x82003088,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0x88,R,thumb,0x00051374,"ldr r0, [r1, #8]",,medium
+0x82003088,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0x88,W,thumb,0x0005137C,"str r0, [r1, #8]",,medium
+0x82003088,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0x88,R,thumb,0x000513DC,"ldr r0, [r1, #8]",,medium
+0x8200308C,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0x8C,W,thumb,0x0005138A,"str r2, [r1, #0xc]",,medium
+0x8200308C,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0x8C,W,thumb,0x00051414,"str r1, [r0, #0xc]",,medium
+0x82003090,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0x90,W,thumb,0x0005138E,"str r2, [r1, #0x10]",,medium
+0x82003090,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0x90,W,thumb,0x0005141A,"str r1, [r0, #0x10]",,medium
+0x82003094,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0x94,W,thumb,0x00051392,"str r2, [r1, #0x14]",,medium
+0x82003094,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0x94,W,thumb,0x0005141E,"str r1, [r0, #0x14]",0x3FFB,medium
+0x82003098,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0x98,W,thumb,0x00051396,"str r2, [r1, #0x18]",,medium
+0x82003098,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0x98,W,thumb,0x00051422,"str r1, [r0, #0x18]",0x73CA,medium
+0x8200309C,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0x9C,W,thumb,0x0005139A,"str r2, [r1, #0x1c]",,medium
+0x820030A0,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0xA0,W,thumb,0x0005139E,"str r2, [r1, #0x20]",,medium
+0x820030A4,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0xA4,W,thumb,0x000513A2,"str r2, [r1, #0x24]",,medium
+0x820030A8,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0xA8,W,thumb,0x000513A6,"str r2, [r1, #0x28]",,medium
+0x820030AC,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0xAC,W,thumb,0x00051372,"str r0, [r1, #0x2c]",,medium
+0x820030AC,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x82003000,0xAC,W,thumb,0x000513AA,"str r0, [r1, #0x2c]",,medium
+0x205000B0,AHB CRG - AHB clock/power domain control,0x20500000,0xB0,R,thumb,0x0004FEB8,"ldr r0, [r1, #0x30]",,confirmed
+0x205000B0,AHB CRG - AHB clock/power domain control,0x20500000,0xB0,W,thumb,0x0004FEC2,"str r0, [r1, #0x30]",,confirmed
+0x205000D4,AHB CRG - AHB clock/power domain control,0x20500000,0xD4,R,thumb,0x0002873E,"ldr r0, [r1, #0x14]",,confirmed
+0x205000D4,AHB CRG - AHB clock/power domain control,0x20500000,0xD4,W,thumb,0x00028742,"str r0, [r1, #0x14]",,confirmed
+0x205000D4,AHB CRG - AHB clock/power domain control,0x20500000,0xD4,R,thumb,0x000287A4,"ldr r1, [r0, #0x14]",,confirmed
+0x205000D4,AHB CRG - AHB clock/power domain control,0x20500000,0xD4,W,thumb,0x000287A8,"str r1, [r0, #0x14]",,confirmed
+0x205000D4,AHB CRG - AHB clock/power domain control,0x20500000,0xD4,R,thumb,0x000288B8,"ldr r0, [r4, #0x14]",,confirmed
+0x205000D4,AHB CRG - AHB clock/power domain control,0x20500000,0xD4,W,thumb,0x000288BE,"str r0, [r4, #0x14]",,confirmed
+0x205000D4,AHB CRG - AHB clock/power domain control,0x20500000,0xD4,R,thumb,0x000288F8,"ldr r0, [r4, #0x14]",,confirmed
+0x205000D4,AHB CRG - AHB clock/power domain control,0x20500000,0xD4,W,thumb,0x000288FC,"str r0, [r4, #0x14]",,confirmed
+0x205000E0,AHB CRG - AHB clock/power domain control,0x20500000,0xE0,R,thumb,0x000264A0,"ldr r0, [r0, #0x20]",,confirmed
+0x205000E0,AHB CRG - AHB clock/power domain control,0x20500000,0xE0,R,thumb,0x00026672,"ldr r0, [r0, #0x20]",,confirmed
+0x205000E0,AHB CRG - AHB clock/power domain control,0x20500000,0xE0,R,thumb,0x000266B0,"ldr r2, [r1, #0x20]",,confirmed
+0x205000E0,AHB CRG - AHB clock/power domain control,0x20500000,0xE0,W,arm,0x00082394,"str r2, [r1]",0x1,confirmed
+0x81000040,AON timer/counter block (OS tick + RTC-like),0x81000000,0x40,W,thumb,0x0007CFC6,"str r1, [r3]",,high
+0x81000040,AON timer/counter block (OS tick + RTC-like),0x81000000,0x40,W,thumb,0x0007D042,"str r1, [r2]",,high
+0x81000040,AON timer/counter block (OS tick + RTC-like),0x81000000,0x40,W,thumb,0x0007D8B4,"str r1, [r4]",0x514,high
+0x81000040,AON timer/counter block (OS tick + RTC-like),0x81000000,0x40,W,thumb,0x0007D928,"str r0, [r4]",0xA28,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,R,thumb,0x0007CFA8,"ldr r2, [r3, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,R,thumb,0x0007CFB4,"ldr r5, [r3, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,W,thumb,0x0007CFB8,"str r5, [r3, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,R,thumb,0x0007CFD8,"ldr r6, [r3, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,W,thumb,0x0007CFDC,"str r6, [r3, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,R,thumb,0x0007D024,"ldr r3, [r2, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,R,thumb,0x0007D030,"ldr r3, [r2, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,W,thumb,0x0007D034,"str r3, [r2, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,R,thumb,0x0007D054,"ldr r1, [r2, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,W,thumb,0x0007D058,"str r1, [r2, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,R,thumb,0x0007D89C,"ldr r5, [r4, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,R,thumb,0x0007D8A6,"ldr r5, [r4, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,W,thumb,0x0007D8AA,"str r5, [r4, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,R,thumb,0x0007D8C6,"ldr r5, [r4, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,W,thumb,0x0007D8CA,"str r5, [r4, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,R,thumb,0x0007D910,"ldr r0, [r4, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,R,thumb,0x0007D91A,"ldr r0, [r4, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,W,thumb,0x0007D91E,"str r0, [r4, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,R,thumb,0x0007D938,"ldr r3, [r4, #8]",,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x81000000,0x48,W,thumb,0x0007D93C,"str r3, [r4, #8]",,high
+0x8100004C,AON timer/counter block (OS tick + RTC-like),0x81000000,0x4C,R,thumb,0x0007CFD0,"ldr r6, [r3, #0xc]",,high
+0x8100004C,AON timer/counter block (OS tick + RTC-like),0x81000000,0x4C,W,thumb,0x0007CFD6,"str r6, [r3, #0xc]",,high
+0x8100004C,AON timer/counter block (OS tick + RTC-like),0x81000000,0x4C,R,thumb,0x0007D04C,"ldr r1, [r2, #0xc]",,high
+0x8100004C,AON timer/counter block (OS tick + RTC-like),0x81000000,0x4C,W,thumb,0x0007D052,"str r1, [r2, #0xc]",,high
+0x8100004C,AON timer/counter block (OS tick + RTC-like),0x81000000,0x4C,R,thumb,0x0007D8BE,"ldr r5, [r4, #0xc]",,high
+0x8100004C,AON timer/counter block (OS tick + RTC-like),0x81000000,0x4C,W,thumb,0x0007D8C4,"str r5, [r4, #0xc]",,high
+0x8100004C,AON timer/counter block (OS tick + RTC-like),0x81000000,0x4C,R,thumb,0x0007D932,"ldr r3, [r4, #0xc]",,high
+0x8100004C,AON timer/counter block (OS tick + RTC-like),0x81000000,0x4C,W,thumb,0x0007D936,"str r3, [r4, #0xc]",,high
+0x8100300C,AON timer/counter block (OS tick + RTC-like),0x81000000,0x300C,R,thumb,0x0000BDCC,"ldr r0, [r2, #0xc]",,high
+0x8100300C,AON timer/counter block (OS tick + RTC-like),0x81000000,0x300C,R,thumb,0x0007995A,"ldr r0, [r2, #0xc]",,high
+0x8100300C,AON timer/counter block (OS tick + RTC-like),0x81000000,0x300C,R,thumb,0x0007D85E,"ldr r0, [r2, #0xc]",,high
+0x8B000040,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x40,R,thumb,0x000250C4,"ldr r1, [r0]",,confirmed
+0x8B000040,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x40,W,thumb,0x000250CC,"str r1, [r0]",,confirmed
+0x8B000040,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x40,R,thumb,0x000250D2,"ldr r0, [r1]",,confirmed
+0x8B000040,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x40,W,thumb,0x000250DA,"str r0, [r1]",,confirmed
+0x8B00004C,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x4C,R,thumb,0x0000089E,"ldr r1, [r1, #0xc]",,confirmed
+0x8B00004C,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x4C,R,thumb,0x000008C0,"ldr r0, [r0, #0xc]",,confirmed
+0x8B00004C,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x4C,R,thumb,0x00055B1A,"ldr r0, [r1, #0xc]",,confirmed
+0x8B00004C,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x4C,W,thumb,0x00055B20,"str r0, [r1, #0xc]",,confirmed
+0x8B00004C,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x4C,W,thumb,0x00055B2A,"str r0, [r1, #0xc]",,confirmed
+0x8B0000A8,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0xA8,R,thumb,0x000286B6,"ldr r0, [r0, #0x28]",,confirmed
+0x8B0000A8,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0xA8,R,thumb,0x0002887E,"ldr r0, [r0, #0x28]",,confirmed
+0x8B000140,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x140,R,thumb,0x0000ECDA,"ldr r1, [r0]",,confirmed
+0x8B000160,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x160,W,thumb,0x00000A4A,"str r0, [r1, #0x20]",0x2,confirmed
+0x8B000160,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x160,R,thumb,0x00001AA8,"ldr r0, [r1, #0x20]",,confirmed
+0x8B000160,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x160,W,thumb,0x00001AB0,"str r0, [r1, #0x20]",,confirmed
+0x8B000160,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x160,W,thumb,0x00008700,"str r0, [r1, #0x20]",0x8,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,R,thumb,0x00008642,"ldr r1, [r0, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,R,thumb,0x00028762,"ldr r1, [r0, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,W,thumb,0x0002876A,"str r1, [r0, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,R,thumb,0x0002876C,"ldr r1, [r0, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,W,thumb,0x00028770,"str r1, [r0, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,R,thumb,0x0002A3D0,"ldr r0, [r1, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,R,thumb,0x0002A57C,"ldr r0, [r0, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,R,thumb,0x00050EE0,"ldr r0, [r3, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,W,thumb,0x00050EE4,"str r0, [r3, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,R,thumb,0x00050EEE,"ldr r0, [r3, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,R,thumb,0x00050F2A,"ldr r0, [r3, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,W,thumb,0x00050F2E,"str r0, [r3, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,R,thumb,0x00050F38,"ldr r0, [r3, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,R,thumb,0x00051048,"ldr r5, [r4, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,R,thumb,0x0005104A,"ldr r0, [r4, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,W,thumb,0x00051052,"str r0, [r4, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,W,thumb,0x0005109E,"str r5, [r4, #4]",,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x1C4,R,thumb,0x000513B4,"ldr r0, [r1, #4]",,confirmed
+0x8B000220,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x220,R,thumb,0x0000D65E,"ldr r0, [r1, #0x20]",,confirmed
+0x8B000220,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x220,W,thumb,0x0000D664,"str r0, [r1, #0x20]",,confirmed
+0x8B000220,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x220,R,thumb,0x0002A00E,"ldr r1, [r0, #0x20]",,confirmed
+0x8B000220,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x220,W,thumb,0x0002A014,"str r1, [r0, #0x20]",,confirmed
+0x8B0002D8,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x2D8,R,thumb,0x000510CA,"ldr r0, [r1, #0x18]",,confirmed
+0x8B0002D8,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x2D8,W,thumb,0x000510D2,"str r0, [r1, #0x18]",,confirmed
+0x8B000364,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x8B000000,0x364,R,arm,0x00054A50,"ldr r1, [r0]",,confirmed
+0x8D20002C,CGA - clock generator / divider module,0x8D200000,0x2C,R,thumb,0x00055B36,"ldr r1, [r0, #0x2c]",,confirmed
+0x8D20002C,CGA - clock generator / divider module,0x8D200000,0x2C,W,thumb,0x00055B40,"str r1, [r0, #0x2c]",,confirmed
+0x8D200030,CGA - clock generator / divider module,0x8D200000,0x30,R,thumb,0x00055B42,"ldr r1, [r0, #0x30]",,confirmed
+0x8D200030,CGA - clock generator / divider module,0x8D200000,0x30,W,thumb,0x00055B50,"str r1, [r0, #0x30]",,confirmed
+0x8D200040,CGA - clock generator / divider module,0x8D200000,0x40,R,thumb,0x000248B6,"ldr r0, [r4]",,confirmed
+0x8D200040,CGA - clock generator / divider module,0x8D200000,0x40,W,thumb,0x000248BC,"str r0, [r4]",,confirmed
+0x8D200040,CGA - clock generator / divider module,0x8D200000,0x40,R,thumb,0x000248CA,"ldr r0, [r4]",,confirmed
+0x8D200044,CGA - clock generator / divider module,0x8D200000,0x44,R,thumb,0x000249AE,"ldr r0, [r4, #4]",,confirmed
+0x8D200044,CGA - clock generator / divider module,0x8D200000,0x44,W,thumb,0x000249B4,"str r0, [r4, #4]",,confirmed
+0x8D200044,CGA - clock generator / divider module,0x8D200000,0x44,R,thumb,0x000249C2,"ldr r0, [r4, #4]",,confirmed
+0x8D200054,CGA - clock generator / divider module,0x8D200000,0x54,R,thumb,0x00024BF6,"ldr r0, [r4, #0x14]",,confirmed
+0x8D200054,CGA - clock generator / divider module,0x8D200000,0x54,W,thumb,0x00024BFC,"str r0, [r4, #0x14]",,confirmed
+0x8D200054,CGA - clock generator / divider module,0x8D200000,0x54,R,thumb,0x00024C0A,"ldr r0, [r4, #0x14]",,confirmed
+0x8D200054,CGA - clock generator / divider module,0x8D200000,0x54,R,thumb,0x00024C82,"ldr r1, [r0, #0x14]",,confirmed
+0x8D200054,CGA - clock generator / divider module,0x8D200000,0x54,W,thumb,0x00024C8A,"str r1, [r0, #0x14]",,confirmed
+0x8D200054,CGA - clock generator / divider module,0x8D200000,0x54,R,thumb,0x00024C8C,"ldr r1, [r0, #0x14]",,confirmed
+0x8D200054,CGA - clock generator / divider module,0x8D200000,0x54,W,thumb,0x00024C92,"str r1, [r0, #0x14]",,confirmed
+0x8D200068,CGA - clock generator / divider module,0x8D200000,0x68,R,thumb,0x00024EAA,"ldr r2, [r4, #0x28]",,confirmed
+0x8D200068,CGA - clock generator / divider module,0x8D200000,0x68,W,thumb,0x00024EB0,"str r2, [r4, #0x28]",,confirmed
+0x8D200068,CGA - clock generator / divider module,0x8D200000,0x68,R,thumb,0x00024EBE,"ldr r0, [r4, #0x28]",,confirmed
+0x8D200068,CGA - clock generator / divider module,0x8D200000,0x68,W,thumb,0x00024EC0,"str r0, [r4, #0x28]",,confirmed
+0x8D2000B8,CGA - clock generator / divider module,0x8D200000,0xB8,R,thumb,0x000510AA,"ldr r1, [r0, #0x38]",,confirmed
+0x8D2000B8,CGA - clock generator / divider module,0x8D200000,0xB8,W,thumb,0x000510B0,"str r1, [r0, #0x38]",,confirmed
+0x8D2000B8,CGA - clock generator / divider module,0x8D200000,0xB8,R,thumb,0x000510B2,"ldr r2, [r0, #0x38]",,confirmed
+0x8D2000B8,CGA - clock generator / divider module,0x8D200000,0xB8,W,thumb,0x000510B8,"str r2, [r0, #0x38]",,confirmed
+0x8D2000BC,CGA - clock generator / divider module,0x8D200000,0xBC,R,thumb,0x000510BA,"ldr r2, [r0, #0x3c]",,confirmed
+0x8D2000BC,CGA - clock generator / divider module,0x8D200000,0xBC,W,thumb,0x000510C0,"str r2, [r0, #0x3c]",,confirmed
+0x8D2000BC,CGA - clock generator / divider module,0x8D200000,0xBC,R,thumb,0x000510C2,"ldr r2, [r0, #0x3c]",,confirmed
+0x8D2000BC,CGA - clock generator / divider module,0x8D200000,0xBC,W,thumb,0x000510C6,"str r2, [r0, #0x3c]",,confirmed
+0x82002000,EFUSE controller,0x82002000,0x0,R,thumb,0x000269C0,"ldr r0, [r1]",,confirmed
+0x82002008,EFUSE controller,0x82002000,0x8,R,thumb,0x00026A62,"ldr r1, [r3, #8]",,confirmed
+0x82002008,EFUSE controller,0x82002000,0x8,W,thumb,0x00026A6E,"str r2, [r3, #8]",,confirmed
+0x8200200C,EFUSE controller,0x82002000,0xC,W,thumb,0x00026A96,"str r0, [r1, #0xc]",,confirmed
+0x82002010,EFUSE controller,0x82002000,0x10,R,thumb,0x000268AA,"ldr r0, [r1, #0x10]",,confirmed
+0x82002010,EFUSE controller,0x82002000,0x10,W,thumb,0x000268AE,"str r0, [r1, #0x10]",,confirmed
+0x82002010,EFUSE controller,0x82002000,0x10,R,thumb,0x000268BA,"ldr r0, [r1, #0x10]",,confirmed
+0x82002010,EFUSE controller,0x82002000,0x10,W,thumb,0x000268BE,"str r0, [r1, #0x10]",,confirmed
+0x82002014,EFUSE controller,0x82002000,0x14,R,thumb,0x000268FE,"ldr r1, [r1, #0x14]",,confirmed
+0x80000008,INTC0 - interrupt controller bank 0,0x80000000,0x8,R,arm,0x0001C80C,"ldr r1, [r0, #8]",,high
+0x80000008,INTC0 - interrupt controller bank 0,0x80000000,0x8,W,arm,0x0001C814,"str r1, [r0, #8]",,high
+0x80000008,INTC0 - interrupt controller bank 0,0x80000000,0x8,R,arm,0x0001D23C,"ldr r1, [r0, #8]",,high
+0x80000008,INTC0 - interrupt controller bank 0,0x80000000,0x8,W,arm,0x0001D244,"str r1, [r0, #8]",,high
+0x80000008,INTC0 - interrupt controller bank 0,0x80000000,0x8,R,arm,0x0001D4F4,"ldr r1, [r0, #8]",,high
+0x80000008,INTC0 - interrupt controller bank 0,0x80000000,0x8,W,arm,0x0001D4FC,"str r1, [r0, #8]",,high
+0x80001004,INTC1 - interrupt controller bank 1,0x80001000,0x4,R,thumb,0x0000D2DE,"ldr r0, [r0, #4]",,confirmed
+0x80001004,INTC1 - interrupt controller bank 1,0x80001000,0x4,R,thumb,0x0002A10C,"ldr r1, [r1, #4]",,confirmed
+0x8000100C,INTC1 - interrupt controller bank 1,0x80001000,0xC,W,thumb,0x000084D8,"str r0, [r1, #0xc]",,confirmed
+0x8000102C,INTC1 - interrupt controller bank 1,0x80001000,0x2C,W,thumb,0x0000863A,"str r0, [r1, #0x2c]",,confirmed
+0x20000094,SMC - PSRAM/SRAM memory controller,0x20000000,0x94,W,thumb,0x00026460,"str r1, [r2, #0x14]",0x5434A,confirmed
+0x9000005C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x5C,R,thumb,0x0000C9B4,"ldr r1, [r0, #0x1c]",,confirmed
+0x9000005C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x5C,R,thumb,0x0000C9B6,"ldr r2, [r0, #0x1c]",,confirmed
+0x9000005C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x5C,R,thumb,0x0000C9C6,"ldr r2, [r0, #0x1c]",,confirmed
+0x9000005C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x5C,R,thumb,0x0000C9D2,"ldr r1, [r0, #0x1c]",,confirmed
+0x9000005C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x5C,R,thumb,0x0000C9DA,"ldr r1, [r0, #0x1c]",,confirmed
+0x90000060,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x60,R,thumb,0x0000C9E0,"ldr r1, [r0, #0x20]",,confirmed
+0x90000060,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x60,R,thumb,0x0000C9E4,"ldr r0, [r0, #0x20]",,confirmed
+0x90000064,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x64,R,thumb,0x0002A038,"ldr r1, [r0, #0x24]",,confirmed
+0x90000064,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x64,W,thumb,0x0002A042,"str r1, [r0, #0x24]",,confirmed
+0x90000068,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x68,R,thumb,0x0000D62A,"ldr r1, [r0, #0x28]",,confirmed
+0x90000068,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x68,W,thumb,0x0000D630,"str r1, [r0, #0x28]",,confirmed
+0x90000068,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x68,R,thumb,0x0000D632,"ldr r1, [r0, #0x28]",,confirmed
+0x90000068,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x68,W,thumb,0x0000D638,"str r1, [r0, #0x28]",,confirmed
+0x90000068,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x68,R,thumb,0x0002A048,"ldr r1, [r0, #0x28]",,confirmed
+0x90000068,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x68,W,thumb,0x0002A04E,"str r1, [r0, #0x28]",,confirmed
+0x90000070,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x70,W,thumb,0x0000D620,"str r1, [r0, #0x30]",,confirmed
+0x90000070,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x70,W,thumb,0x0000DA88,"str r0, [r6, #0x30]",0x3FFF,confirmed
+0x90000070,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x70,W,thumb,0x0002A046,"str r4, [r0, #0x30]",0x3FFF,confirmed
+0x900000CC,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0xCC,R,thumb,0x0000D4BC,"ldr r1, [r4, #0xc]",,confirmed
+0x900000CC,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0xCC,W,thumb,0x0000D4C0,"str r1, [r4, #0xc]",,confirmed
+0x900000D0,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0xD0,R,thumb,0x0000D306,"ldr r1, [r0, #0x10]",,confirmed
+0x90000100,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x100,R,thumb,0x00029BCA,"ldr r1, [r0]",,confirmed
+0x90000100,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x100,W,thumb,0x00029BD4,"str r1, [r0]",,confirmed
+0x90000100,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x100,R,thumb,0x00029BE0,"ldr r1, [r0]",,confirmed
+0x90000100,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x100,W,thumb,0x00029BE6,"str r1, [r0]",,confirmed
+0x90000100,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x100,R,thumb,0x00029BE8,"ldr r1, [r0]",,confirmed
+0x90000100,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x100,W,thumb,0x00029BF0,"str r1, [r0]",,confirmed
+0x90000108,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x108,R,thumb,0x00029BD6,"ldr r1, [r0, #8]",,confirmed
+0x90000108,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x108,W,thumb,0x00029BDE,"str r1, [r0, #8]",,confirmed
+0x9000010C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x10C,R,thumb,0x00029BF6,"ldr r1, [r0, #0xc]",,confirmed
+0x9000010C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x10C,W,thumb,0x00029BFE,"str r1, [r0, #0xc]",,confirmed
+0x90000114,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x114,W,thumb,0x00029BF4,"str r1, [r0, #0x14]",0x3FFF,confirmed
+0x90000140,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x140,R,thumb,0x0000D648,"ldr r1, [r4]",,confirmed
+0x90000140,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x140,W,thumb,0x0000D64C,"str r1, [r4]",,confirmed
+0x90000150,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x150,R,thumb,0x0002A162,"ldr r1, [r0, #0x10]",,confirmed
+0x90000154,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x154,W,thumb,0x0000D626,"str r1, [r4, #0x14]",,confirmed
+0x90000154,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x154,W,thumb,0x0000DA8E,"str r0, [r3, #0x14]",,confirmed
+0x90000154,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x154,W,thumb,0x0002A166,"str r2, [r0, #0x14]",,confirmed
+0x90000180,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x180,R,thumb,0x0002A372,"ldr r0, [r4]",,confirmed
+0x90000180,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x180,R,thumb,0x0002A382,"ldr r0, [r4]",,confirmed
+0x90000180,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x180,W,thumb,0x0002A38A,"str r0, [r4]",,confirmed
+0x9000018C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x18C,R,thumb,0x0000D052,"ldr r7, [r4, #0xc]",,confirmed
+0x9000018C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x18C,R,thumb,0x0000D05A,"ldr r0, [r4, #0xc]",,confirmed
+0x9000018C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x18C,W,thumb,0x0000D05E,"str r0, [r4, #0xc]",,confirmed
+0x9000018C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x18C,R,thumb,0x0000D060,"ldr r0, [r4, #0xc]",,confirmed
+0x90000190,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x190,R,thumb,0x0000D050,"ldr r6, [r4, #0x10]",,confirmed
+0x90000190,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x190,R,thumb,0x0002A368,"ldr r0, [r4, #0x10]",,confirmed
+0x90000194,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x194,W,thumb,0x0000D072,"str r6, [r4, #0x14]",,confirmed
+0x9000019C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x19C,R,thumb,0x0000C494,"ldr r0, [r4, #0x1c]",,confirmed
+0x9000019C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x90000000,0x19C,W,thumb,0x0000C49E,"str r0, [r4, #0x1c]",,confirmed
+0x8D000000,module written 0x41C1C0 at cold boot (watchdog/boot-flag candidate),0x8D000000,0x0,W,arm,0x00054A64,"str r1, [r0]",0x41C1C0,low
+0x20102020,unidentified,,,W,thumb,0x00050552,"str r7, [r1, #0x20]",,unverified
+0x20102024,unidentified,,,W,thumb,0x0005053E,"str r7, [r1, #0x24]",,unverified
+0x20102028,unidentified,,,W,thumb,0x00050478,"str r0, [r5, #0x28]",,unverified
+0x20102028,unidentified,,,W,thumb,0x0005052A,"str r7, [r1, #0x28]",,unverified
+0x2010202C,unidentified,,,W,thumb,0x00050466,"str r0, [r5, #0x2c]",,unverified
+0x2010202C,unidentified,,,W,thumb,0x00050516,"str r7, [r1, #0x2c]",0x0,unverified
+0x20102030,unidentified,,,W,thumb,0x0000C11E,"str r4, [r0, #0x30]",,unverified
+0x2020202D,unidentified,,,W,thumb,0x00002E6A,"strb r4, [r4, #0xd]",0x20202020,unverified
+0x20202031,unidentified,,,W,thumb,0x00002E60,"strb r1, [r4, #0x11]",,unverified
+0x20202034,unidentified,,,W,thumb,0x00002E68,"str r5, [r4, #0x14]",,unverified
+0x20202050,unidentified,,,W,thumb,0x00002E5C,"str r0, [r4, #0x30]",,unverified
+0x20202064,unidentified,,,W,thumb,0x00002E62,"str r5, [r4, #0x44]",,unverified
+0x20455341,unidentified,,,R,thumb,0x000801EA,"ldrb r1, [r2]",,unverified
+0x20501080,unidentified,,,W,arm,0x0001D4A0,"str r2, [r0, #0x80]",0x1000,unverified
+0x20501080,unidentified,,,W,thumb,0x00025640,"str r0, [r1]",,unverified
+0x20501080,unidentified,,,W,thumb,0x0002580C,"str r0, [r1]",0x2,unverified
+0x20501080,unidentified,,,W,thumb,0x00025842,"str r0, [r1]",,unverified
+0x20501080,unidentified,,,W,thumb,0x0002587A,"str r0, [r1]",0x40,unverified
+0x20501080,unidentified,,,W,thumb,0x000258B0,"str r0, [r1]",,unverified
+0x20501080,unidentified,,,W,thumb,0x000258EA,"str r0, [r1]",,unverified
+0x20501080,unidentified,,,W,thumb,0x00025922,"str r0, [r1]",0x80,unverified
+0x20501080,unidentified,,,W,thumb,0x00025992,"str r0, [r1]",,unverified
+0x20501080,unidentified,,,W,thumb,0x000259CA,"str r0, [r1]",0x10,unverified
+0x20501080,unidentified,,,W,thumb,0x000259FE,"str r0, [r1]",0x1,unverified
+0x20501080,unidentified,,,W,thumb,0x00025A32,"str r0, [r1]",0x4,unverified
+0x20501080,unidentified,,,W,thumb,0x00025A4C,"str r0, [r1]",,unverified
+0x20501080,unidentified,,,W,thumb,0x000288EC,"str r0, [r1]",,unverified
+0x20501080,unidentified,,,W,thumb,0x0002A00A,"str r0, [r1]",0x10,unverified
+0x20502040,unidentified,,,W,arm,0x0001D47C,"str r4, [r0, #0x40]",,unverified
+0x20502080,unidentified,,,W,arm,0x0001D514,"str r2, [r0, #0x80]",,unverified
+0x20502080,unidentified,,,W,thumb,0x0002564A,"str r0, [r1]",,unverified
+0x20502080,unidentified,,,W,thumb,0x00025814,"str r0, [r1]",0x2,unverified
+0x20502080,unidentified,,,W,thumb,0x0002584C,"str r0, [r1]",,unverified
+0x20502080,unidentified,,,W,thumb,0x00025882,"str r0, [r1]",0x40,unverified
+0x20502080,unidentified,,,W,thumb,0x000258BA,"str r0, [r1]",,unverified
+0x20502080,unidentified,,,W,thumb,0x000258F4,"str r0, [r1]",,unverified
+0x20502080,unidentified,,,W,thumb,0x0002592A,"str r0, [r1]",0x80,unverified
+0x20502080,unidentified,,,W,thumb,0x0002599C,"str r0, [r1]",,unverified
+0x20502080,unidentified,,,W,thumb,0x000259D2,"str r0, [r1]",0x10,unverified
+0x20502080,unidentified,,,W,thumb,0x00025A06,"str r0, [r1]",0x1,unverified
+0x20502080,unidentified,,,W,thumb,0x00025A3A,"str r0, [r1]",0x4,unverified
+0x20502080,unidentified,,,W,thumb,0x00025A56,"str r0, [r1]",,unverified
+0x20502080,unidentified,,,W,thumb,0x000287B8,"str r1, [r0]",0x9D216,unverified
+0x20502080,unidentified,,,W,thumb,0x000287C4,"str r1, [r0]",0x9D016,unverified
+0x20502080,unidentified,,,W,thumb,0x000287D2,"str r0, [r1]",,unverified
+0x20502080,unidentified,,,W,thumb,0x00028974,"str r0, [r1]",0x9D217,unverified
+0x207001FC,unidentified,,,R,thumb,0x0004FD7A,"ldr r0, [r0, #0x3c]",,unverified
+0x89EDDA54,unidentified,,,R,thumb,0x0026FF90,"ldrh r1, [r0, #0x34]",,unverified
+0x8A5C4F69,unidentified,,,W,thumb,0x0032EF12,"strb r6, [r4, #0x1d]",,unverified
+0x8B001068,unidentified,,,W,thumb,0x00026850,"str r1, [r0, #0x28]",,unverified
+0x8B001068,unidentified,,,W,thumb,0x0002A458,"str r5, [r0, #0x28]",,unverified
+0x8B001068,unidentified,,,W,thumb,0x000510F0,"str r1, [r2, #0x28]",,unverified
+0x8B0010A8,unidentified,,,W,thumb,0x0002523E,"str r0, [r1, #0x28]",,unverified
+0x8B0010A8,unidentified,,,W,thumb,0x00025A84,"str r0, [r1, #0x28]",,unverified
+0x8B0010A8,unidentified,,,W,thumb,0x000288E6,"str r0, [r1, #0x28]",,unverified
+0x8B002068,unidentified,,,W,thumb,0x0002685C,"str r1, [r0, #0x28]",,unverified
+0x8B002068,unidentified,,,W,thumb,0x0002A476,"str r5, [r0, #0x28]",,unverified
+0x8B002068,unidentified,,,W,thumb,0x000510FA,"str r1, [r0, #0x28]",,unverified
+0x8B0020A8,unidentified,,,W,thumb,0x00025248,"str r0, [r1, #0x28]",,unverified
+0x8B0020A8,unidentified,,,W,thumb,0x00025A8E,"str r0, [r1, #0x28]",,unverified
+0x8B0020A8,unidentified,,,W,thumb,0x00028808,"str r1, [r0, #0x28]",,unverified
+0x8B0020A8,unidentified,,,W,thumb,0x00028962,"str r0, [r1, #0x28]",0xAB038FDE,unverified
+0x8B6E1F18,unidentified,,,R,thumb,0x000EBB08,"ldrb r5, [r1, #0x1c]",,unverified
+0x8C29FEED,unidentified,,,R,thumb,0x00288AB0,"ldrb r1, [r6, #0x1c]",,unverified
+0x8C29FEFB,unidentified,,,W,thumb,0x00288AAE,"strh r5, [r6, #0x2a]",,unverified
+0x8ECE1138,unidentified,,,W,thumb,0x002E1B1A,"str r5, [r5, #0x18]",0x8ECE1120,unverified
+0x90E21965,unidentified,,,R,thumb,0x000E487A,"ldrh r3, [r7, #0xa]",,unverified
+0x932F0E83,unidentified,,,R,thumb,0x002183D8,"ldr r2, [r5, #0x14]",,unverified
+0x93FB73B0,unidentified,,,W,thumb,0x00100DEE,"strh r2, [r7, #0xa]",,unverified
+0x9E6641D7,unidentified,,,R,thumb,0x001E06BC,"ldrb r3, [r4, #5]",,unverified

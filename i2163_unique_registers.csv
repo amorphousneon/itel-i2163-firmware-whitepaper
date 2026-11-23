@@ -1,0 +1,95 @@
+address,peripheral,reg_offset,access_type,n_accesses,code_sites,values_written,id_confidence
+0x82003048,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x48,R,1,0x00036DB4,,medium
+0x82003088,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x88,R/W,3,0x00051374 0x0005137C 0x000513DC,,medium
+0x8200308C,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x8C,W,2,0x0005138A 0x00051414,,medium
+0x82003090,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x90,W,2,0x0005138E 0x0005141A,,medium
+0x82003094,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x94,W,2,0x00051392 0x0005141E,0x3FFB,medium
+0x82003098,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x98,W,2,0x00051396 0x00051422,0x73CA,medium
+0x8200309C,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x9C,W,1,0x0005139A,,medium
+0x820030A0,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0xA0,W,1,0x0005139E,,medium
+0x820030A4,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0xA4,W,1,0x000513A2,,medium
+0x820030A8,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0xA8,W,1,0x000513A6,,medium
+0x820030AC,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0xAC,W,2,0x00051372 0x000513AA,,medium
+0x205000B0,AHB CRG - AHB clock/power domain control,0xB0,R/W,2,0x0004FEB8 0x0004FEC2,,confirmed
+0x205000D4,AHB CRG - AHB clock/power domain control,0xD4,R/W,8,0x0002873E 0x00028742 0x000287A4 0x000287A8 0x000288B8 0x000288BE,,confirmed
+0x205000E0,AHB CRG - AHB clock/power domain control,0xE0,R/W,4,0x000264A0 0x00026672 0x000266B0 0x00082394,0x1,confirmed
+0x81000040,AON timer/counter block (OS tick + RTC-like),0x40,W,4,0x0007CFC6 0x0007D042 0x0007D8B4 0x0007D928,0x514 0xA28,high
+0x81000048,AON timer/counter block (OS tick + RTC-like),0x48,R/W,20,0x0007CFA8 0x0007CFB4 0x0007CFB8 0x0007CFD8 0x0007CFDC 0x0007D024,,high
+0x8100004C,AON timer/counter block (OS tick + RTC-like),0x4C,R/W,8,0x0007CFD0 0x0007CFD6 0x0007D04C 0x0007D052 0x0007D8BE 0x0007D8C4,,high
+0x8100300C,AON timer/counter block (OS tick + RTC-like),0x300C,R,3,0x0000BDCC 0x0007995A 0x0007D85E,,high
+0x8B000040,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x40,R/W,4,0x000250C4 0x000250CC 0x000250D2 0x000250DA,,confirmed
+0x8B00004C,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x4C,R/W,5,0x0000089E 0x000008C0 0x00055B1A 0x00055B20 0x00055B2A,,confirmed
+0x8B0000A8,"AON_APB GR - global registers: clocks, resets, chip id, PM",0xA8,R,2,0x000286B6 0x0002887E,,confirmed
+0x8B000140,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x140,R,1,0x0000ECDA,,confirmed
+0x8B000160,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x160,R/W,4,0x00000A4A 0x00001AA8 0x00001AB0 0x00008700,0x2 0x8,confirmed
+0x8B0001C4,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x1C4,R/W,18,0x00008642 0x00028762 0x0002876A 0x0002876C 0x00028770 0x0002A3D0,,confirmed
+0x8B000220,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x220,R/W,4,0x0000D65E 0x0000D664 0x0002A00E 0x0002A014,,confirmed
+0x8B0002D8,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x2D8,R/W,2,0x000510CA 0x000510D2,,confirmed
+0x8B000364,"AON_APB GR - global registers: clocks, resets, chip id, PM",0x364,R,1,0x00054A50,,confirmed
+0x8D20002C,CGA - clock generator / divider module,0x2C,R/W,2,0x00055B36 0x00055B40,,confirmed
+0x8D200030,CGA - clock generator / divider module,0x30,R/W,2,0x00055B42 0x00055B50,,confirmed
+0x8D200040,CGA - clock generator / divider module,0x40,R/W,3,0x000248B6 0x000248BC 0x000248CA,,confirmed
+0x8D200044,CGA - clock generator / divider module,0x44,R/W,3,0x000249AE 0x000249B4 0x000249C2,,confirmed
+0x8D200054,CGA - clock generator / divider module,0x54,R/W,7,0x00024BF6 0x00024BFC 0x00024C0A 0x00024C82 0x00024C8A 0x00024C8C,,confirmed
+0x8D200068,CGA - clock generator / divider module,0x68,R/W,4,0x00024EAA 0x00024EB0 0x00024EBE 0x00024EC0,,confirmed
+0x8D2000B8,CGA - clock generator / divider module,0xB8,R/W,4,0x000510AA 0x000510B0 0x000510B2 0x000510B8,,confirmed
+0x8D2000BC,CGA - clock generator / divider module,0xBC,R/W,4,0x000510BA 0x000510C0 0x000510C2 0x000510C6,,confirmed
+0x82002000,EFUSE controller,0x0,R,1,0x000269C0,,confirmed
+0x82002008,EFUSE controller,0x8,R/W,2,0x00026A62 0x00026A6E,,confirmed
+0x8200200C,EFUSE controller,0xC,W,1,0x00026A96,,confirmed
+0x82002010,EFUSE controller,0x10,R/W,4,0x000268AA 0x000268AE 0x000268BA 0x000268BE,,confirmed
+0x82002014,EFUSE controller,0x14,R,1,0x000268FE,,confirmed
+0x80000008,INTC0 - interrupt controller bank 0,0x8,R/W,6,0x0001C80C 0x0001C814 0x0001D23C 0x0001D244 0x0001D4F4 0x0001D4FC,,high
+0x80001004,INTC1 - interrupt controller bank 1,0x4,R,2,0x0000D2DE 0x0002A10C,,confirmed
+0x8000100C,INTC1 - interrupt controller bank 1,0xC,W,1,0x000084D8,,confirmed
+0x8000102C,INTC1 - interrupt controller bank 1,0x2C,W,1,0x0000863A,,confirmed
+0x20000094,SMC - PSRAM/SRAM memory controller,0x94,W,1,0x00026460,0x5434A,confirmed
+0x9000005C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x5C,R,5,0x0000C9B4 0x0000C9B6 0x0000C9C6 0x0000C9D2 0x0000C9DA,,confirmed
+0x90000060,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x60,R,2,0x0000C9E0 0x0000C9E4,,confirmed
+0x90000064,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x64,R/W,2,0x0002A038 0x0002A042,,confirmed
+0x90000068,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x68,R/W,6,0x0000D62A 0x0000D630 0x0000D632 0x0000D638 0x0002A048 0x0002A04E,,confirmed
+0x90000070,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x70,W,3,0x0000D620 0x0000DA88 0x0002A046,0x3FFF,confirmed
+0x900000CC,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0xCC,R/W,2,0x0000D4BC 0x0000D4C0,,confirmed
+0x900000D0,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0xD0,R,1,0x0000D306,,confirmed
+0x90000100,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x100,R/W,6,0x00029BCA 0x00029BD4 0x00029BE0 0x00029BE6 0x00029BE8 0x00029BF0,,confirmed
+0x90000108,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x108,R/W,2,0x00029BD6 0x00029BDE,,confirmed
+0x9000010C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x10C,R/W,2,0x00029BF6 0x00029BFE,,confirmed
+0x90000114,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x114,W,1,0x00029BF4,0x3FFF,confirmed
+0x90000140,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x140,R/W,2,0x0000D648 0x0000D64C,,confirmed
+0x90000150,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x150,R,1,0x0002A162,,confirmed
+0x90000154,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x154,W,3,0x0000D626 0x0000DA8E 0x0002A166,,confirmed
+0x90000180,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x180,R/W,3,0x0002A372 0x0002A382 0x0002A38A,,confirmed
+0x9000018C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x18C,R/W,4,0x0000D052 0x0000D05A 0x0000D05E 0x0000D060,,confirmed
+0x90000190,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x190,R,2,0x0000D050 0x0002A368,,confirmed
+0x90000194,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x194,W,1,0x0000D072,,confirmed
+0x9000019C,"USB device controller (DWC-like, 4 endpoints + FIFOs)",0x19C,R/W,2,0x0000C494 0x0000C49E,,confirmed
+0x8D000000,module written 0x41C1C0 at cold boot (watchdog/boot-flag candidate),0x0,W,1,0x00054A64,0x41C1C0,low
+0x20102020,unidentified,,W,1,0x00050552,,unverified
+0x20102024,unidentified,,W,1,0x0005053E,,unverified
+0x20102028,unidentified,,W,2,0x00050478 0x0005052A,,unverified
+0x2010202C,unidentified,,W,2,0x00050466 0x00050516,0x0,unverified
+0x20102030,unidentified,,W,1,0x0000C11E,,unverified
+0x2020202D,unidentified,,W,1,0x00002E6A,0x20202020,unverified
+0x20202031,unidentified,,W,1,0x00002E60,,unverified
+0x20202034,unidentified,,W,1,0x00002E68,,unverified
+0x20202050,unidentified,,W,1,0x00002E5C,,unverified
+0x20202064,unidentified,,W,1,0x00002E62,,unverified
+0x20455341,unidentified,,R,1,0x000801EA,,unverified
+0x20501080,unidentified,,W,15,0x0001D4A0 0x00025640 0x0002580C 0x00025842 0x0002587A 0x000258B0,0x1 0x10 0x1000 0x2 0x4 0x40 0x80,unverified
+0x20502040,unidentified,,W,1,0x0001D47C,,unverified
+0x20502080,unidentified,,W,17,0x0001D514 0x0002564A 0x00025814 0x0002584C 0x00025882 0x000258BA,0x1 0x10 0x2 0x4 0x40 0x80 0x9D016 0x9D216,unverified
+0x207001FC,unidentified,,R,1,0x0004FD7A,,unverified
+0x89EDDA54,unidentified,,R,1,0x0026FF90,,unverified
+0x8A5C4F69,unidentified,,W,1,0x0032EF12,,unverified
+0x8B001068,unidentified,,W,3,0x00026850 0x0002A458 0x000510F0,,unverified
+0x8B0010A8,unidentified,,W,3,0x0002523E 0x00025A84 0x000288E6,,unverified
+0x8B002068,unidentified,,W,3,0x0002685C 0x0002A476 0x000510FA,,unverified
+0x8B0020A8,unidentified,,W,4,0x00025248 0x00025A8E 0x00028808 0x00028962,0xAB038FDE,unverified
+0x8B6E1F18,unidentified,,R,1,0x000EBB08,,unverified
+0x8C29FEED,unidentified,,R,1,0x00288AB0,,unverified
+0x8C29FEFB,unidentified,,W,1,0x00288AAE,,unverified
+0x8ECE1138,unidentified,,W,1,0x002E1B1A,0x8ECE1120,unverified
+0x90E21965,unidentified,,R,1,0x000E487A,,unverified
+0x932F0E83,unidentified,,R,1,0x002183D8,,unverified
+0x93FB73B0,unidentified,,W,1,0x00100DEE,,unverified
+0x9E6641D7,unidentified,,R,1,0x001E06BC,,unverified
