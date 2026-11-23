@@ -1,15 +1,15 @@
 address,peripheral,reg_offset,access_type,n_accesses,code_sites,values_written,id_confidence
-0x82003048,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x48,R,1,0x00036DB4,,medium
-0x82003088,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x88,R/W,3,0x00051374 0x0005137C 0x000513DC,,medium
-0x8200308C,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x8C,W,2,0x0005138A 0x00051414,,medium
-0x82003090,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x90,W,2,0x0005138E 0x0005141A,,medium
-0x82003094,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x94,W,2,0x00051392 0x0005141E,0x3FFB,medium
-0x82003098,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x98,W,2,0x00051396 0x00051422,0x73CA,medium
-0x8200309C,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0x9C,W,1,0x0005139A,,medium
-0x820030A0,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0xA0,W,1,0x0005139E,,medium
-0x820030A4,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0xA4,W,1,0x000513A2,,medium
-0x820030A8,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0xA8,W,1,0x000513A6,,medium
-0x820030AC,"ADI-adjacent module, likely analog/codec calibration or 2nd ADI bank",0xAC,W,2,0x00051372 0x000513AA,,medium
+0x82003048,VBC (Voice Band Controller),0x48 = DAHPCTL,R,1,0x00036DB4,,high
+0x82003088,VBC (Voice Band Controller),0x88 = DANCHCTL,R/W,3,0x00051374 0x0005137C 0x000513DC,,high
+0x8200308C,VBC (Voice Band Controller),0x8C = DANCH_PTSINMW,W,2,0x0005138A 0x00051414,,high
+0x82003090,VBC (Voice Band Controller),0x90 = DANCH_PTSINLW,W,2,0x0005138E 0x0005141A,,high
+0x82003094,VBC (Voice Band Controller),0x94 = DANCH_PTCOSMW,W,2,0x00051392 0x0005141E,0x3FFB,high
+0x82003098,VBC (Voice Band Controller),0x98 = DANCH_PTCOSLW,W,2,0x00051396 0x00051422,0x73CA,high
+0x8200309C,VBC (Voice Band Controller),0x9C = DANCH_PTGL,W,1,0x0005139A,,high
+0x820030A0,VBC (Voice Band Controller),0xA0 = DANCH_PTGR,W,1,0x0005139E,,high
+0x820030A4,VBC (Voice Band Controller),0xA4 = DANCH_PTGD,W,1,0x000513A2,,high
+0x820030A8,VBC (Voice Band Controller),0xA8 = DANCH_PTGU,W,1,0x000513A6,,high
+0x820030AC,VBC (Voice Band Controller),0xAC = DANCH_PTH,W,2,0x00051372 0x000513AA,,high
 0x205000B0,AHB CRG - AHB clock/power domain control,0xB0,R/W,2,0x0004FEB8 0x0004FEC2,,confirmed
 0x205000D4,AHB CRG - AHB clock/power domain control,0xD4,R/W,8,0x0002873E 0x00028742 0x000287A4 0x000287A8 0x000288B8 0x000288BE,,confirmed
 0x205000E0,AHB CRG - AHB clock/power domain control,0xE0,R/W,4,0x000264A0 0x00026672 0x000266B0 0x00082394,0x1,confirmed

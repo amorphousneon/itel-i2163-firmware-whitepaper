@@ -1,10 +1,33 @@
 # itel it2163 (Spreadtrum SC6531E) — Full Firmware Analysis & Register Reference
 
+> **⚠ CORRECTION NOTICE (Rev. 2):** After cross-referencing the official
+> *SC6531E and SC6531M Device Specification* (989 pp), several peripheral
+> identifications in this report were found to be **wrong**. The corrections
+> are listed in `i2163_audio_path_analysis.md` §Rev.2-changelog and are
+> reflected in the updated CSVs. Key corrections affecting this report:
+>
+> | address | was (wrong) | now (correct per datasheet) |
+> |---|---|---|
+> | 0x82003000 | "ADI-adjacent module" | **VBC — Voice Band Controller** (DS §6.7) |
+> | 0x8200304C-0x82003074 | — | **DAALCCTL0-10** (ALC coefficients, NOT FIFO slots) |
+> | 0x83000000 | "unknown module" | **UART0** (DS §5.2.2) |
+> | 0x84000000 | "unknown module" | **UART1** (DS §5.2.2, shared with DSP) |
+> | 0x86000000 / 0x86001000 | "UART0 / UART1" | **I2C0 / I2C1** (DS §5.2.2) |
+> | 0x88000000 | "watchdog candidate" | **PWM** (DS §5.2.2; firmware also uses it as module clk/power bank — unresolved) |
+> | 0x8D101000 | "SFC (SPI NOR)" | **GEA or undocumented** (SFC is at 0x20A00000 on AHB, DS §5.6) |
+> | 0x8D200000 | "CGA clock generator" | **AON — Always-On domain** (DS §5.2.2: AON at 0x8D020000, firmware uses 0x8D200000) |
+> | 0x8F000000 / 0x8F100000 | not identified | **IIS0 / IIS1** (DS §5.2.2, shared with DSP) |
+> | 0x8A002000 / 0x8A003000 | not identified | **AUD / AUDIFD** (DS §5.2.2, ch.11) |
+> | 0x20100000 | not identified | **DMA control registers** (DS §5.2.1 AHB map) |
+>
+> The corrected register reference for the audio path specifically is in
+> `i2163_audio_path_analysis.md` and `i2163_audio_path_writes.csv`.
+
 **Target file:** `flash.bin` — 16,777,216 bytes (16 MiB) raw NOR flash dump
 **SoC:** Spreadtrum/UNISOC SC6531E (`SC6531EFM` build, analog companion die `SC1161`)
 **CPU core:** ARM926EJ-S (ARMv5TE), up to 208 MHz
 **OS:** ThreadX RTOS (Spreadtrum "MOCOR" stack)
-**Analysis type:** static reverse engineering — recursive-descent disassembly (ARM + Thumb), literal-pool constant propagation, MMIO access harvesting, string/structure forensics, cross-reference against public community RE sources
+**Analysis type:** static reverse engineering — recursive-descent disassembly (ARM + Thumb), literal-pool constant propagation, MMIO access harvesting, string/structure forensics, cross-reference against public community RE sources and the official SC6531E/M Device Specification
 
 ---
 

@@ -1,0 +1,187 @@
+Code PC,Function,Target Address,Register Name,Access,Bitmask / Value,Inferred Role,Confidence,Trace Batch
+0x084d4,0x084dc,0x8000000c,unknown,MMIO-W,0xffffffff,not in static role DB,low,POWER_CTL
+0x084d8,0x084dc,0x8000100c,unknown,MMIO-W,0xffffffff,not in static role DB,low,POWER_CTL
+0x084e6,0x084dc,0x82001028,unknown,ADI-W,0,not in static role DB,low,POWER_CTL
+0x2a7a6,0x2a784,0x82001048,codec digital ctl,ADI-R,read,b0=enable b1=DAC start b2=DAC en b3=ADC en b4(=8)=final en (firmware-traced),medium,SPRD_CODEC
+0x2a7b8,0x2a784,0x82001048,codec digital ctl,ADI-R,read,b0=enable b1=DAC start b2=DAC en b3=ADC en b4(=8)=final en (firmware-traced),medium,SPRD_CODEC
+0x2a7c8,0x2a784,0x82001048,codec digital ctl,ADI-R,read,b0=enable b1=DAC start b2=DAC en b3=ADC en b4(=8)=final en (firmware-traced),medium,SPRD_CODEC
+0x2a816,0x2a784,0x82001048,codec digital ctl,ADI-R,read,b0=enable b1=DAC start b2=DAC en b3=ADC en b4(=8)=final en (firmware-traced),medium,SPRD_CODEC
+0x2a832,0x2a784,0x82001048,codec digital ctl,ADI-R,read,b0=enable b1=DAC start b2=DAC en b3=ADC en b4(=8)=final en (firmware-traced),medium,SPRD_CODEC
+0x2a83c,0x2a784,0x82001048,codec digital ctl,ADI-R,read,b0=enable b1=DAC start b2=DAC en b3=ADC en b4(=8)=final en (firmware-traced),medium,SPRD_CODEC
+0x2a858,0x2a844,0x8200104c,codec reset,ADI-W,1,Codec reset reg (firmware-traced),medium,SPRD_CODEC
+0x2a868,0x2a844,0x82001050,codec status,ADI-R,read,Status read (firmware-traced),medium,SPRD_CODEC
+0x2a78c,0x2a784,0x82001060,codec lock key,ADI-W,0xe551,"Write 0xE551 to unlock, 0x1AAE to lock (firmware-traced)",medium,SPRD_CODEC
+0x2a828,0x2a784,0x82001060,codec lock key,ADI-W,0x1aae,"Write 0xE551 to unlock, 0x1AAE to lock (firmware-traced)",medium,SPRD_CODEC
+0x2a84c,0x2a844,0x82001060,codec lock key,ADI-W,0xe551,"Write 0xE551 to unlock, 0x1AAE to lock (firmware-traced)",medium,SPRD_CODEC
+0x2a880,0x2a844,0x82001060,codec lock key,ADI-W,0x1aae,"Write 0xE551 to unlock, 0x1AAE to lock (firmware-traced)",medium,SPRD_CODEC
+0x2a7e4,0x2a784,0x8200106c,codec IRQ mask,ADI-W,0xffff,Write 0xFFFF to enable all (firmware-traced),medium,SPRD_CODEC
+0x2a7da,0x2a784,0x82001070,codec IRQ enable,ADI-W,1,Write 1 to enable (firmware-traced),medium,SPRD_CODEC
+0x0deec,0x0ded4,0x82001080,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0df10,0x0ded4,0x8200108c,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0df06,0x0ded4,0x82001090,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0df72,0x0df68,0x82001094,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0dfe2,0x0df68,0x82001094,unknown,ADI-W,1,not in static role DB,low,POWER_CTL
+0x0dfee,0x0df68,0x82001094,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0df98,0x0df68,0x82001098,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0dfa0,0x0df68,0x82001098,unknown,ADI-W,0,not in static role DB,low,POWER_CTL
+0x0dfc6,0x0df68,0x82001098,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0df80,0x0df68,0x8200109c,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0dfac,0x0df68,0x8200109c,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0dee4,0x0ded4,0x820010a8,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0def4,0x0ded4,0x820010a8,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0dc2a,0x0dc24,0x82001300,codec PA control,ADI-R,read,b0=PA bias b1=DAC/mixer enable (firmware-traced; SC1161 datasheet N/A),medium,POWER_CTL
+0x0dc60,0x0dcec,0x82001300,codec PA control,ADI-R,read,b0=PA bias b1=DAC/mixer enable (firmware-traced; SC1161 datasheet N/A),medium,POWER_CTL
+0x0dc8e,0x0dc7c,0x82001304,codec PA mode,ADI-R,read,bits[4:0]=mode(6=Class-D BTL) b5=standby b6=driver en (firmware-traced),medium,POWER_CTL
+0x0dc9e,0x0dc7c,0x82001304,codec PA mode,ADI-R,read,bits[4:0]=mode(6=Class-D BTL) b5=standby b6=driver en (firmware-traced),medium,POWER_CTL
+0x0dcbe,0x0dcb0,0x82001304,codec PA mode,ADI-R,read,bits[4:0]=mode(6=Class-D BTL) b5=standby b6=driver en (firmware-traced),medium,POWER_CTL
+0x0dccc,0x0dcb0,0x82001304,codec PA mode,ADI-R,read,bits[4:0]=mode(6=Class-D BTL) b5=standby b6=driver en (firmware-traced),medium,POWER_CTL
+0x0dcdc,0x0dcb0,0x82001304,codec PA mode,ADI-R,read,bits[4:0]=mode(6=Class-D BTL) b5=standby b6=driver en (firmware-traced),medium,POWER_CTL
+0x0dc74,0x0dcec,0x82001348,codec PA gain,ADI-W,0xe0,0xE0 = max gain (firmware-traced),medium,POWER_CTL
+0x0dd52,0x0dcec,0x8200134c,codec PA bias rdbk,ADI-R,read,PA bias readback (firmware-traced),medium,POWER_CTL
+0x0dd02,0x0dcec,0x82001354,codec PA final en,ADI-R,read,b0=ADC en b[11:0]=PA chain enable (firmware-traced),medium,POWER_CTL
+0x0dd5c,0x0dcec,0x82001354,codec PA final en,ADI-R,read,b0=ADC en b[11:0]=PA chain enable (firmware-traced),medium,POWER_CTL
+0x0dd46,0x0dcec,0x8200135c,codec PA status,ADI-R,read,PA status (firmware-traced),medium,POWER_CTL
+0x0de02,0x0ddee,0x82001408,MODULE_EN0,ADI-R,read,Module enable: b7=PINREG b6=PWM b5=AUXADC b4=AUD b3=EIC b2=WDG b1=RTC b0=CAL,high,POWER_CTL
+0x0de3a,0x0ddee,0x82001408,MODULE_EN0,ADI-R,read,Module enable: b7=PINREG b6=PWM b5=AUXADC b4=AUD b3=EIC b2=WDG b1=RTC b0=CAL,high,POWER_CTL
+0x3871c,0x38c72,0x82001408,MODULE_EN0,ADI-R,read,Module enable: b7=PINREG b6=PWM b5=AUXADC b4=AUD b3=EIC b2=WDG b1=RTC b0=CAL,high,AUDIO_HAL
+0x3872c,0x38c72,0x82001408,MODULE_EN0,ADI-R,read,Module enable: b7=PINREG b6=PWM b5=AUXADC b4=AUD b3=EIC b2=WDG b1=RTC b0=CAL,high,AUDIO_HAL
+0x0de18,0x0ddee,0x8200140c,ARM_CLK_EN0,ADI-R,read,ARM clk en: b7=CLK_AUD_SCLK b6=CLK_AUXAD b5=CLK_AUXADC b2=CLK_CAL b1=CLK_AUD_IF_6P5M b0=CLK_AUD_IF,high,POWER_CTL
+0x0de50,0x0ddee,0x8200140c,ARM_CLK_EN0,ADI-R,read,ARM clk en: b7=CLK_AUD_SCLK b6=CLK_AUXAD b5=CLK_AUXADC b2=CLK_CAL b1=CLK_AUD_IF_6P5M b0=CLK_AUD_IF,high,POWER_CTL
+0x2a4ea,0x2a4d4,0x8200140c,ARM_CLK_EN0,ADI-R,read,ARM clk en: b7=CLK_AUD_SCLK b6=CLK_AUXAD b5=CLK_AUXADC b2=CLK_CAL b1=CLK_AUD_IF_6P5M b0=CLK_AUD_IF,high,SPRD_CODEC
+0x2a4fc,0x2a4d4,0x8200140c,ARM_CLK_EN0,ADI-R,read,ARM clk en: b7=CLK_AUD_SCLK b6=CLK_AUXAD b5=CLK_AUXADC b2=CLK_CAL b1=CLK_AUD_IF_6P5M b0=CLK_AUD_IF,high,SPRD_CODEC
+0x2a45e,0x2a44e,0x82001414,SOFT_RST0,ADI-R,read,Analog-die soft reset,high,SPRD_CODEC
+0x0ddb4,0x0dd88,0x82001418,POWER_PD_SW,ADI-R,read,Power-down (software controlled),high,POWER_CTL
+0x0ddd2,0x0dd88,0x82001418,POWER_PD_SW,ADI-R,read,Power-down (software controlled),high,POWER_CTL
+0x29b0e,0x29b04,0x8200147c,codec reset,ADI-R,read,b0 = reset (firmware-traced),medium,SPRD_CODEC
+0x29b1a,0x29b04,0x8200147c,codec reset,ADI-R,read,b0 = reset (firmware-traced),medium,SPRD_CODEC
+0x2865c,0x2849a,0x820014dc,codec DAC PGA 3,ADI-R,read,DAC PGA gain 3 (firmware-traced),medium,SPRD_CODEC
+0x28088,0x2806c,0x820014e0,SLP_LDO_PD_CTRL0,ADI-R,read,Deep-sleep LDO power-down: b15=RF b14=SF b13=DCXO b12=BTPA b11=VDD28 b10=SD b8=USB b5=CAMD b3=CAMA b1=SIM1 b0=SIM0,high,SPRD_CODEC
+0x28096,0x2806c,0x820014e0,SLP_LDO_PD_CTRL0,ADI-R,read,Deep-sleep LDO power-down: b15=RF b14=SF b13=DCXO b12=BTPA b11=VDD28 b10=SD b8=USB b5=CAMD b3=CAMA b1=SIM1 b0=SIM0,high,SPRD_CODEC
+0x28670,0x2849a,0x820014e4,codec bias ctl,ADI-R,read,VCM/VBG bias control bits (firmware-traced),medium,SPRD_CODEC
+0x28620,0x2849a,0x820014e8,codec ADC PGA,ADI-R,read,ADC PGA gain: bits[2:0] (firmware-traced),medium,SPRD_CODEC
+0x28552,0x2849a,0x820014ec,codec DAC PGA,ADI-R,read,DAC PGA gain: bits[13:6] (firmware-traced),medium,SPRD_CODEC
+0x28562,0x2849a,0x820014ec,codec DAC PGA,ADI-R,read,DAC PGA gain: bits[13:6] (firmware-traced),medium,SPRD_CODEC
+0x28572,0x2849a,0x820014ec,codec DAC PGA,ADI-R,read,DAC PGA gain: bits[13:6] (firmware-traced),medium,SPRD_CODEC
+0x28584,0x2849a,0x820014ec,codec DAC PGA,ADI-R,read,DAC PGA gain: bits[13:6] (firmware-traced),medium,SPRD_CODEC
+0x28596,0x2849a,0x820014f0,codec line PGA,ADI-R,read,Line-out PGA gain (firmware-traced),medium,SPRD_CODEC
+0x285a6,0x2849a,0x820014f0,codec line PGA,ADI-R,read,Line-out PGA gain (firmware-traced),medium,SPRD_CODEC
+0x285b6,0x2849a,0x820014f0,codec line PGA,ADI-R,read,Line-out PGA gain (firmware-traced),medium,SPRD_CODEC
+0x285c6,0x2849a,0x820014f0,codec line PGA,ADI-R,read,Line-out PGA gain (firmware-traced),medium,SPRD_CODEC
+0x285da,0x2849a,0x820014f4,codec HP PGA,ADI-R,read,Headphone PGA gain (firmware-traced),medium,SPRD_CODEC
+0x285ea,0x2849a,0x820014f4,codec HP PGA,ADI-R,read,Headphone PGA gain (firmware-traced),medium,SPRD_CODEC
+0x285fa,0x2849a,0x820014f4,codec HP PGA,ADI-R,read,Headphone PGA gain (firmware-traced),medium,SPRD_CODEC
+0x2860a,0x2849a,0x820014f4,codec HP PGA,ADI-R,read,Headphone PGA gain (firmware-traced),medium,SPRD_CODEC
+0x0dda8,0x0dd88,0x8200151c,codec ADC bias,ADI-R,read,b5 (firmware-traced),medium,POWER_CTL
+0x0dde0,0x0dd88,0x8200151c,codec ADC bias,ADI-R,read,b5 (firmware-traced),medium,POWER_CTL
+0x2853e,0x2849a,0x8200151c,codec ADC bias,ADI-R,read,b5 (firmware-traced),medium,SPRD_CODEC
+0x0de2e,0x0ddee,0x82001534,codec bias trim,ADI-R,read,bits[7:0] (firmware-traced),medium,POWER_CTL
+0x0de66,0x0ddee,0x82001534,codec bias trim,ADI-R,read,bits[7:0] (firmware-traced),medium,POWER_CTL
+0x28526,0x2849a,0x82001534,codec bias trim,ADI-R,read,bits[7:0] (firmware-traced),medium,SPRD_CODEC
+0x0e310,0x0e308,0x8200153c,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0e0ee,0x0e11e,0x82001540,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0e148,0x0e11e,0x82001540,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0e15e,0x0e11e,0x82001540,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0e168,0x0e11e,0x82001540,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0e178,0x0e11e,0x82001540,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x00d4e,0x00d44,0x82001568,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x00d56,0x00d44,0x82001568,unknown,ADI-W,0,not in static role DB,low,POWER_CTL
+0x00d5c,0x00d44,0x82001568,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x00d72,0x00d44,0x8200156c,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x00d7a,0x00d44,0x8200156c,unknown,ADI-W,0,not in static role DB,low,POWER_CTL
+0x00d80,0x00d44,0x8200156c,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x00d92,0x00d44,0x82001570,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x00d9a,0x00d44,0x82001570,unknown,ADI-W,0,not in static role DB,low,POWER_CTL
+0x00da0,0x00d44,0x82001570,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x5138a,0x51386,0x8200308c,DANCH_PTSINMW,MMIO-W,?,Notch tone pt sin magnitude word (hi 16b),high,AUDIO_HAL
+0x51414,0x51360,0x8200308c,DANCH_PTSINMW,MMIO-W,0xfe7d,Notch tone pt sin magnitude word (hi 16b),high,AUDIO_HAL
+0x5142a,0x51360,0x8200308c,DANCH_PTSINMW,MMIO-W,0xfdcd,Notch tone pt sin magnitude word (hi 16b),high,AUDIO_HAL
+0x5143a,0x51360,0x8200308c,DANCH_PTSINMW,MMIO-W,0xfe67,Notch tone pt sin magnitude word (hi 16b),high,AUDIO_HAL
+0x5138e,0x51386,0x82003090,DANCH_PTSINLW,MMIO-W,?,Notch tone pt sin (lo 16b),high,AUDIO_HAL
+0x5141a,0x51360,0x82003090,DANCH_PTSINLW,MMIO-W,0xff2f,Notch tone pt sin (lo 16b),high,AUDIO_HAL
+0x5142e,0x51360,0x82003090,DANCH_PTSINLW,MMIO-W,0x232b,Notch tone pt sin (lo 16b),high,AUDIO_HAL
+0x5143c,0x51360,0x82003090,DANCH_PTSINLW,MMIO-W,0x891a,Notch tone pt sin (lo 16b),high,AUDIO_HAL
+0x51392,0x51386,0x82003094,DANCH_PTCOSMW,MMIO-W,?,Notch tone pt cos (hi 16b),high,AUDIO_HAL
+0x5141e,0x51360,0x82003094,DANCH_PTCOSMW,MMIO-W,0x3ffb,Notch tone pt cos (hi 16b),high,AUDIO_HAL
+0x51434,0x51360,0x82003094,DANCH_PTCOSMW,MMIO-W,0x3ff6,Notch tone pt cos (hi 16b),high,AUDIO_HAL
+0x5143e,0x51360,0x82003094,DANCH_PTCOSMW,MMIO-W,0x3ffa,Notch tone pt cos (hi 16b),high,AUDIO_HAL
+0x51396,0x51386,0x82003098,DANCH_PTCOSLW,MMIO-W,?,Notch tone pt cos (lo 16b),high,AUDIO_HAL
+0x51422,0x51360,0x82003098,DANCH_PTCOSLW,MMIO-W,0x73ca,Notch tone pt cos (lo 16b),high,AUDIO_HAL
+0x51422,0x51360,0x82003098,DANCH_PTCOSLW,MMIO-W,0x5428,Notch tone pt cos (lo 16b),high,AUDIO_HAL
+0x51440,0x51360,0x82003098,DANCH_PTCOSLW,MMIO-W,0xe856,Notch tone pt cos (lo 16b),high,AUDIO_HAL
+0x5139a,0x51386,0x8200309c,DANCH_PTGL,MMIO-W,?,Notch tone pt left channel gain,high,AUDIO_HAL
+0x51446,0x51360,0x8200309c,DANCH_PTGL,MMIO-W,0x395,Notch tone pt left channel gain,high,AUDIO_HAL
+0x5139e,0x51386,0x820030a0,DANCH_PTGR,MMIO-W,?,Notch tone pt right channel gain,high,AUDIO_HAL
+0x51444,0x51360,0x820030a0,DANCH_PTGR,MMIO-W,0x395,Notch tone pt right channel gain,high,AUDIO_HAL
+0x513a2,0x51386,0x820030a4,DANCH_PTGD,MMIO-W,?,Notch tone pt gain down,high,AUDIO_HAL
+0x5144a,0x51360,0x820030a4,DANCH_PTGD,MMIO-W,8,Notch tone pt gain down,high,AUDIO_HAL
+0x513a6,0x51386,0x820030a8,DANCH_PTGU,MMIO-W,?,Notch tone pt gain up,high,AUDIO_HAL
+0x5144e,0x51360,0x820030a8,DANCH_PTGU,MMIO-W,2,Notch tone pt gain up,high,AUDIO_HAL
+0x51372,0x51360,0x820030ac,DANCH_PTH,MMIO-W,0x100,Notch tone pt hold t,high,AUDIO_HAL
+0x513aa,0x51386,0x820030ac,DANCH_PTH,MMIO-W,?,Notch tone pt hold t,high,AUDIO_HAL
+0x00db2,0x00d44,0x8b000228,unknown,MMIO-W,SYM0,not in static role DB,low,POWER_CTL
+0x00db2,0x00d7e,0x8b000228,unknown,MMIO-W,?,not in static role DB,low,POWER_CTL
+0x2848e,0x2849a,0x8b000284,unknown,MMIO-W,0,not in static role DB,low,SPRD_CODEC
+0x28490,0x2849a,0x8b000288,unknown,MMIO-W,0,not in static role DB,low,SPRD_CODEC
+0x28492,0x2849a,0x8b00028c,unknown,MMIO-W,0,not in static role DB,low,SPRD_CODEC
+0x28494,0x2849a,0x8b000290,unknown,MMIO-W,0,not in static role DB,low,SPRD_CODEC
+0x28496,0x2849a,0x8b000294,unknown,MMIO-W,0,not in static role DB,low,SPRD_CODEC
+0x26850,0x2687a,0x8b001068,GR soft-reset SET,MMIO-W,0x400000,Write 1<<N to assert soft-reset of module bit N,high,SPRD_CODEC
+0x2a458,0x2a44e,0x8b001068,GR soft-reset SET,MMIO-W,0x200000,Write 1<<N to assert soft-reset of module bit N,high,SPRD_CODEC
+0x268a2,0x2687a,0x8b0010a8,GR APB clk-en SET,MMIO-W,?,APB clock enable: write 1<<N to enable bit N,high,SPRD_CODEC
+0x2a4e6,0x2a4d4,0x8b0010a8,GR APB clk-en SET,MMIO-W,0x10000000,APB clock enable: write 1<<N to enable bit N,high,SPRD_CODEC
+0x2a4f8,0x2a4d4,0x8b0020a8,GR APB clk-en CLR,MMIO-W,0x10000000,APB clock enable: write 1<<N to disable bit N,high,SPRD_CODEC
+0x3868a,0x3820c,0,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC_TASK
+0x386a8,0x3820c,0,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC_TASK
+0x386d0,0x3820c,0,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC_TASK
+0x3871c,0x38a58,0x42c5a34,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,AUDIO_HAL
+0x3872c,0x38a58,0x42c5a34,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,AUDIO_HAL
+0x3871c,0x391a6,0x42c5a44,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,AUDIO_HAL
+0x3872c,0x391a6,0x42c5a44,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,AUDIO_HAL
+0x3871c,0x391a6,0x42c5a48,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,AUDIO_HAL
+0x3872c,0x391a6,0x42c5a48,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,AUDIO_HAL
+0x3871c,0x37e6e,0x42c5a50,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,SPRD_CODEC_TASK
+0x3871c,0x37e6e,0x42c5a54,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,SPRD_CODEC_TASK
+0x3872c,0x37e6e,0x42c5a54,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,SPRD_CODEC_TASK
+0x38e16,0x380b2,0x42c5a58,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,SPRD_CODEC_TASK
+0x39126,0x39110,0x42c5a58,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,AUDIO_HAL
+0x39134,0x39110,0x42c5a58,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,AUDIO_HAL
+0x3871c,0x37e6e,0x42c5a5c,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,SPRD_CODEC_TASK
+0x3871c,0x38c72,0x42c5a60,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,AUDIO_HAL
+0x3872c,0x38c72,0x42c5a60,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,AUDIO_HAL
+0x3871c,0x38a58,0x42c5a88,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,AUDIO_HAL
+0x3872c,0x38a58,0x42c5a88,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,AUDIO_HAL
+0x39424,0x38996,0x42c5a88,unknown,ADI-R,read,RAM struct read (codec device context in PSRAM),n/a,AUDIO_HAL
+0x0e0c2,0x0e11e,0x7fe00000,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0e0c2,0x0e23a,0x7fe00004,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x00d80,0x00d7e,?,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x084a2,0x0848a,?,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0e0ee,0x0e0bc,?,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0e244,0x0e23a,?,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0e250,0x0e23a,?,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x26890,0x2687a,?,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC
+0x2804a,0x2687a,?,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC
+0x28054,0x2687a,?,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC
+0x28088,0x28086,?,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC
+0x28096,0x28086,?,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC
+0x281f8,0x2687a,?,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC
+0x2a49a,0x2a498,?,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC
+0x2a4aa,0x2a498,?,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC
+0x3871c,0x37e6e,?,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC_TASK
+0x3872c,0x37e6e,?,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC_TASK
+0x0e0c2,0x0e0bc,SYM0,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x0e23a,0x0e23a,SYM0,unknown,ADI-R,read,not in static role DB,low,POWER_CTL
+0x27656,0x27648,SYM0,unknown,MMIO-W,SYM1,not in static role DB,low,SPRD_CODEC
+0x27678,0x27666,SYM0,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC
+0x27696,0x2767e,SYM0,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC
+0x276be,0x276a6,SYM0,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC
+0x28088,0x28086,SYM0,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC
+0x28096,0x28086,SYM0,unknown,ADI-R,read,not in static role DB,low,SPRD_CODEC
+0x3868a,0x38678,SYM0,unknown,ADI-R,read,not in static role DB,low,AUDIO_HAL
+0x386a8,0x38690,SYM0,unknown,ADI-R,read,not in static role DB,low,AUDIO_HAL
+0x386d0,0x386b8,SYM0,unknown,ADI-R,read,not in static role DB,low,AUDIO_HAL
+0x3871c,0x38710,SYM1,unknown,ADI-R,read,not in static role DB,low,AUDIO_HAL
+0x3872c,0x38710,SYM1,unknown,ADI-R,read,not in static role DB,low,AUDIO_HAL
+0x38758,0x3873c,SYM2,unknown,ADI-R,read,not in static role DB,low,AUDIO_HAL
+0x38774,0x3873c,SYM2,unknown,ADI-R,read,not in static role DB,low,AUDIO_HAL
+0x3878c,0x3873c,SYM2,unknown,ADI-R,read,not in static role DB,low,AUDIO_HAL
+0x387a4,0x3873c,SYM2,unknown,ADI-R,read,not in static role DB,low,AUDIO_HAL
